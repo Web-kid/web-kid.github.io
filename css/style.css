@@ -1,0 +1,227 @@
+/* Здесь будут храниться стили нашего сайта */
+
+body{
+	margin: 0; 
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-color: #dddddd;
+}
+img{
+	max-width: 100%;
+}
+header{
+	padding-top: 59px;
+	padding-bottom: 22px;
+	background-color: #3a7dfd;
+	color: #fff;
+}
+.header-pretitle{
+	margin-top: 102px;
+}
+.header-title{
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 21px;
+	margin-bottom: 0;
+}
+.header-subtitle{
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.header-button{
+	color: #072b6f;
+	font-weight: 700;
+	width: 200px;
+	height: 50px;
+	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	border-radius: 25px;
+	background-color: #ffffff;
+	padding: 17px 57px 19px 55px;
+	margin-top: 33px;
+}
+header small{
+	font-size: 12px;
+	display: block;
+	padding-left: 54px;
+	margin-top: 9px;
+}
+
+/* Секция портфолия*/
+.portfolio{
+	margin: 44px 49px 71px 48px;
+	background-color: #dddddd;
+}
+.portfolio-block{
+	padding-top: 29px;
+	padding-bottom: 44px;
+	background-color: #fff;
+}
+.portfolio-title, .portfolio-subtitle{
+	text-align: center;
+}
+.portfolio-title{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #072b6f;
+	margin-bottom: 0px;
+}
+.portfolio-subtitle{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #7bb9ff;
+}
+.portfolio-col-1{
+	padding-left: 50px;
+}
+.portfolio-col-2{
+	padding-right: 50px;
+}
+.portfolio-block h3{
+	color: #072b6f;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.portfolio-text{
+		min-height: 80px;
+	color: #8f8f8f;
+	font-size: 14px;
+	font-weight: 400;
+}
+.portfolio-block a{
+	color: #072b6f;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: underline;
+	padding-bottom: 31px;
+}
+.portfolio-img-1{
+	text-align: right;
+}
+.portfolio-img-2{
+	text-align: left;
+}
+.text-1{
+	padding-left: 33px;
+	text-align: left;
+}
+.text-2{
+	text-align: left;
+}
+.portfolio-portfolio{
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+/* footer */
+footer{
+	background-color: #3a7dfd;
+	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+.footer-author{
+	font-size: 24px;
+	margin-bottom: 7px;
+	color: #fefefe;
+}
+.footer-text{
+margin-top: 0px;
+color: #deedfe;
+font-size: 18px;
+}
+.social-block{
+	text-align: center;
+}
+.social-block a{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+.social-block p{
+	color: #deedfe;
+	font-size: 18px;
+	font-weight: 400;
+}
+.footer-cta{
+
+	color: #deedfe;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 17px;
+	padding-right: 37px;
+}
+.footer-button{
+	display: inline-block;
+	width: 165px;
+	height: 48px;
+	border-radius: 24px;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	color: #fff;
+	font-size: 18px;
+}
+.button-cta{
+	text-align: right;
+}
+
+@media (max-width: 1200px){ /*Эй браузер, если экран с мах шириной 1200px */
+				.header-pretitle{									/* То сделай так, чтобы отступ у главного заголовка будет НЕ 102px, а 60px */
+				margin-top: 60px;
+	}
+}
+@media (max-width: 992px){ /*Чей монитор, ширина которого меньше 992px*/
+			.header-img{														/*изображение вообще не будет появляться*/
+				display: none;
+			}
+			.header-pretitle{									/* То сделай так, чтобы отступ у главного заголовка будет НЕ 102px и НЕ 60px, а 10px */
+				margin-top: 10px;
+			}
+			.header-pretitle, .header-title, .header-subtitle, .button-center, .header-free{
+				text-align: center;
+				padding-left: 0px;
+			}
+			.footer-author{
+				font-size: 18px;
+			}
+			.footer-cta{
+				margin-bottom: 10px;
+			}
+			.footer-text, .social-block p, .footer-cta{
+				font-size: 14px;
+			}
+			.social-block a{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			.social-block img{
+				width: 30px;
+			}
+			.footer-button{
+				font-size: 14px;
+				padding: 15px 30px;
+			}
+}
+
+@media (max-width: 768px){
+			.portfolio-col-1{
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-bottom: 20px;
+			}
+			.portfolio-col-2{
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-bottom: 20px;
+			}
+			.portfolio-img-1,.portfolio-img-2{
+				text-align: center;
+			}
+			.text-1, .text-2{
+			padding-left: 6px;
+			}
+			.footer-author, .footer-text, .button-cta, .footer-cta{
+				text-align: center;
+				padding-right: 0px;
+			}
+}
