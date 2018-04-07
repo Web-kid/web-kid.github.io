@@ -25,6 +25,7 @@ header{
 	margin-bottom: 0;
 }
 .header-subtitle{
+
 	margin-top: 20px;
 	margin-bottom: 0;
 }
@@ -36,8 +37,10 @@ header{
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 25px;
 	background-color: #ffffff;
-	padding: 17px 57px 19px 55px;
+	padding: 14px 57px 16px 55px;
 	margin-top: 33px;
+	display: inline-block;
+	text-decoration: none;
 }
 header small{
 	font-size: 12px;
@@ -81,8 +84,8 @@ header small{
 	font-size: 18px;
 	text-transform: uppercase;
 }
-.portfolio-text{
-		min-height: 80px;
+.portfolio-text-1, .portfolio-text-2{
+	min-height: 80px;
 	color: #8f8f8f;
 	font-size: 14px;
 	font-weight: 400;
@@ -91,7 +94,7 @@ header small{
 	color: #072b6f;
 	font-size: 14px;
 	font-weight: 400;
-	text-decoration: underline;
+	text-decoration: none;
 	padding-bottom: 31px;
 }
 .portfolio-img-1{
@@ -110,7 +113,7 @@ header small{
 .portfolio-portfolio{
 	font-size: 14px;
 	font-weight: 400;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* footer */
@@ -152,7 +155,7 @@ font-size: 18px;
 	padding-right: 37px;
 }
 .footer-button{
-	display: inline-block;
+	display: block;
 	width: 165px;
 	height: 48px;
 	border-radius: 24px;
@@ -164,11 +167,32 @@ font-size: 18px;
 .button-cta{
 	text-align: right;
 }
+.button-cta a{
+	color: #fff;
+	font-weight: 700;
+	width: 200px;
+	height: 50px;
+	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	border-radius: 25px;
+	background-color: #3a7dfd;
+	padding: 13px 57px 17px 55px;
+	margin-top: 33px;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 0px;
+}
 
 @media (max-width: 1200px){ /*Эй браузер, если экран с мах шириной 1200px */
 				.header-pretitle{									/* То сделай так, чтобы отступ у главного заголовка будет НЕ 102px, а 60px */
 				margin-top: 60px;
-	}
+				}
+				.portfolio-text-2{
+					margin-top: 39px;
+				}
+				.portfolio-text-1, .portfolio-text-2{
+					min-height: 90px;
+				}
+
 }
 @media (max-width: 992px){ /*Чей монитор, ширина которого меньше 992px*/
 			.header-img{														/*изображение вообще не будет появляться*/
@@ -201,6 +225,9 @@ font-size: 18px;
 				font-size: 14px;
 				padding: 15px 30px;
 			}
+			.portfolio-text-1, .portfolio-text-2{
+				min-height: 150px;
+			}
 }
 
 @media (max-width: 768px){
@@ -223,5 +250,8 @@ font-size: 18px;
 			.footer-author, .footer-text, .button-cta, .footer-cta{
 				text-align: center;
 				padding-right: 0px;
+			}
+			.button-cta a{
+				margin-top: 20px;
 			}
 }
