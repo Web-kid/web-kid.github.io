@@ -42,6 +42,11 @@ header{
 	display: inline-block;
 	text-decoration: none;
 }
+.header-button:hover{
+	box-shadow: none;
+	o-trantransition:0.2s;
+	transition: 0.2s;
+}
 header small{
 	font-size: 12px;
 	display: block;
@@ -181,7 +186,11 @@ font-size: 18px;
 	text-decoration: none;
 	margin-top: 0px;
 }
-
+.button-cta a:hover{
+	background-color: #fff;
+	color: #3a7dfd;
+	transition: 0.2s;
+}
 @media (max-width: 1200px){ /*Эй браузер, если экран с мах шириной 1200px */
 				.header-pretitle{									/* То сделай так, чтобы отступ у главного заголовка будет НЕ 102px, а 60px */
 				margin-top: 60px;

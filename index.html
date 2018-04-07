@@ -17,6 +17,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 		<!--Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,17 +27,17 @@
  		<div class="container">	<!-- держит все по середине, чтобы не вывалился сайт -->
  			<div class="row">
  				<div class="col-lg-7">
- 					<img class="header-img" src="img/main-img.png" alt="Монитор" >
+ 					<img class="header-img wow flipInY"  data-wow-delay="0.2s" src="img/main-img.png" alt="Монитор" >
  				</div>
  				<!-- /.col-7 -->
  				<div class="col-lg-5">
  						<p class="header-pretitle">Веб-разработчик</p>
  						<h1 class="header-title">Кидясов Василий</h1>
- 						<p class="header-subtitle">Верстка на HTML/CSS</br>Разработка сайтов под ключ</p>
+ 						<p class="header-subtitle wow pulse">Верстка на HTML/CSS</br>Разработка сайтов под ключ</p>
  						<div class="button-center">
- 							<a href="https://vk.me/id153098272" class="header-button">Связаться</a>
+ 							<a href="https://vk.me/id153098272" class="header-button wow pulse">Связаться</a>
 							</div>
-							<small class="header-free">*Это бесплатно</small>
+							<small class="header-free wow flash">*Это бесплатно</small>
  						
  				</div>
  				<!-- /.col-5 -->
@@ -49,7 +50,7 @@
 		<!-- секция, портфолио -->
  	<section class="portfolio">
 			<div class="container">
-				<div class="portfolio-block">
+				<div class="portfolio-block wow fadeIn">
  				<h2 class="portfolio-title">Портфолио</h2>
  				<p class="portfolio-subtitle">Мои работы</p>
  				<div class="row">
@@ -104,9 +105,9 @@
  					<div class="col-md-4">
  						<div class="social-block">
  							<p>Подпишитесь:</p>
- 							<a href="https://www.facebook.com/vasiliy.kid"><img src="img/social/facebook-logo-button.png" alt="Facebook"></a>
- 							<a href="https://t.me/VasiliyKid"><img src="img/social/telegram-symbol.png" alt="Telegram"></a>
- 							<a href="https://vk.com/id153098272"><img src="img/social/vk-social-logotype.png" alt="VK"></a>
+ 							<a href="https://www.facebook.com/vasiliy.kid"><img class="wow bounceInDown" data-wow-delay="0.1s" src="img/social/facebook-logo-button.png" alt="Facebook"></a>
+ 							<a href="https://t.me/VasiliyKid"><img class="wow bounceInDown" data-wow-delay="0.2s" src="img/social/telegram-symbol.png" alt="Telegram"></a>
+ 							<a href="https://vk.com/id153098272"><img class="wow bounceInDown" data-wow-delay="0.3s" src="img/social/vk-social-logotype.png" alt="VK"></a>
  							<!-- <a href="#"><img src="img/social/youtube-symbol.png" alt="YouTubr"></a> -->
  						</div>
  					</div>
@@ -125,6 +126,8 @@ var __REPLAIN_ = '55b6cff4-cd0a-44ea-b71c-2ff7888025dd';
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js');
 </script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
 </body>
 </html>
 
