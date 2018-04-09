@@ -1,0 +1,125 @@
+/*container style*/
+.container{
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 77px;
+	font-family: Tahoma;
+}
+.header-img{
+	display: inline-block;
+	width: 44%;
+	vertical-align: middle;
+	padding-bottom: 96px; 
+}
+.header-text{
+	display: inline-block;
+	width: 55%;
+	vertical-align: middle;
+}
+.header-text__title{
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.header-text__pretitle{
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+.header-text__descr{
+	width: 526px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	margin-bottom: 47px;
+}
+.header-text-price{
+	color: #313131;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 27px;
+	margin-bottom: 75px;
+}
+.button{
+	color:#fff;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 27px;
+	background-color: #f05a22;
+	padding: 22px 42px;
+	border: 2px solid #f05a22;
+	border-radius: 3px;
+}
+.button-o{
+	color: #f05a22;
+	background-color: transparent;
+}
+
+/*section style*/
+
+.section-title{
+	margin-bottom: 97px;
+	color: #333333;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 27px;
+	text-align: center;
+}
+.feachers{
+	padding-top: 12px;
+	padding-bottom: 99px;
+;
+	background-color: #f2f2f2;
+}
+.feachers-wrop::after{
+	content: '';
+	display: table;
+	clear: both;
+}   
+/*Clear-fix, предотвращает обтикание после этого класса*/
+.feachers-block{
+	text-align: center;
+	display: inline-block;
+/*	width: 24%;*/
+	width: 25%;
+	float: left;
+}
+.feachers-block__img{
+	min-height: 50px;
+	margin-bottom: 23px;
+}
+.feachers-block__text{
+color: #333333;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+}
+
+/*footer*/
+.customers-title{
+	text-align: center;
+	color: #333333;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 27px;
+	margin-top: 89px;
+	margin-bottom: 69px;
+}
+.customers-wrop{
+	margin-bottom: 85px;
+	
+}
+.people{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	float: left;
+	margin-bottom: 25px;
+}
+.customers-wrop::after{
+	content: '';
+	display: table;
+	clear: both;
+}   
+/*Clear-fix, предотвращает обтикание после этого класса*/
